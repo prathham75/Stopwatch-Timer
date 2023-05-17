@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tahoma", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00020a;
+}
+.content {
+    text-align: center;
+    font-size:xx-large;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(244, 237, 237);
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 100px;
+    border-radius: 20px;
+    color: #11f2f6;
+    background-color: #000000;
+    box-shadow: 0 10px 10px rgba(23, 59, 186, 0.685);
+}
+
+p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #fbfbfcdc;
+    text-transform: uppercase;
+    
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    color: brown;
+}
+
+.wrapper {
+    padding: 30px 0;
+    border-radius: 440px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgb(7, 53, 237);
+    backdrop-filter: blur(3px);
+    border: 5px solid rgb(26, 6, 238);
+    transition: all 0.5s;
+}
+
+.wrapper:hover {
+    box-shadow: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main div {
+    width: 20%;
+    text-align: center;
+}
+
+.main .number {
+    position: relative;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    color: #e4d6db;
+}
+
+.btns {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 30px;
+
+}
+
+.btn {
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: #000000;
+    color: #f4eded;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgb(7, 53, 237);
+    backdrop-filter: blur(1.5px);
+    border: 2px solid rgb(26, 6, 238);
+    transition: all 0.5s;
+    
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
+        padding: 0 20px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .outer-wrapper {
+        padding: 40px 0;
+    }
+
+    .main div {
+        width: 15%;
+    }
+
+    .main .number {
+        font-size: 50px;
+    }
+
+    .main .colon {
+        font-size: 16px;
+    }
+}
